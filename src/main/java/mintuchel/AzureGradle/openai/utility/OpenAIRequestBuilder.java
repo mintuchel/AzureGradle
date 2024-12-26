@@ -14,8 +14,8 @@ import java.util.Map;
 @Component
 public class OpenAIRequestBuilder {
 
-    // properties에서 API 키를 주입
-    @Value("${OPENAI_KEY}")
+    // Azure 환경변수에서 API KEY 주입
+    @Value("${OPENAI_API_KEY}")
     private String OPENAI_API_KEY;
 
     // OpenAI API 로 쏠 HTTP REQUEST HEADER BODY 세팅해서 만들어줌
